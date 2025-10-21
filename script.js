@@ -39,3 +39,23 @@ function showCardsOnScroll() {
 
 window.addEventListener('scroll', showCardsOnScroll);
 window.addEventListener('load', showCardsOnScroll);
+// CONTACT FORM SUBMIT (Formspree)
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const form = this;
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      alert("✅ Thank you for your message! We'll get back to you soon.");
+      form.reset();
+    } else {
+      alert("❌ Oops! There was a problem submitting your form.");
+    }
+  });
+}
