@@ -37,7 +37,7 @@
     <section class="hero" id="hero">
       <h1 class="hero-title">WELCOME TO<br><span>RED & BLUE</span></h1>
       <p class="hero-subtitle">Innovative Software Development</p>
-      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjsnzZHvKSQcPbpFWvclCWHlLVFQGqsXHCCDHXnPFVfrhvwnqbhZFftLSzVRMZfMwWqVKj" target="_blank" class="btn btn-contact">Contact Us</a>
+      <a href="#contact" class="btn btn-contact">Contact Us</a>
     </section>
 
     <!-- ABOUT -->
@@ -92,7 +92,13 @@
     <section class="contact" id="contact">
       <h2 class="contact-title">Get in Touch</h2>
       <p class="contact-text">Let’s build something amazing together.</p>
-      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjsnzZHvKSQcPbpFWvclCWHlLVFQGqsXHCCDHXnPFVfrhvwnqbhZFftLSzVRMZfMwWqVKj" target="_blank" class="btn btn-contact">Contact Now</a>
+
+      <form class="contact-form" action="https://formspree.io/f/mvgwnzvl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-contact">Send Message</button>
+      </form>
     </section>
   </main>
 
@@ -105,9 +111,6 @@
       </div>
 
       <div class="footer-socials">
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjsnzZHvKSQcPbpFWvclCWHlLVFQGqsXHCCDHXnPFVfrhvwnqbhZFftLSzVRMZfMwWqVKj" aria-label="Gmail" target="_blank" class="icon-gmail">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
-        </a>
         <a href="https://www.instagram.com/github/" target="_blank" aria-label="Instagram" class="icon-instagram">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
         </a>
@@ -121,5 +124,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
